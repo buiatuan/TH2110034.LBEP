@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+	// math.h la de dung can bac 2
+	float a,b,c;
+	printf("Nhap a = ");
+	scanf("%f",&a);
+	printf("Nhap b = ");
+	scanf("%f",&b);
+	printf("Nhap c = ");
+	scanf("%f",&c);
+	
+	
+	if(a==0){
+		if(b==0){
+			if(c==0){
+				printf("phuong trinh vo so nghiem");
+			}else{
+				printf("phuong trinh vo nghiem");
+			}
+		}else{
+			printf("phuong trinh co nghiem x = %f",(-c)/b);
+		}
+	}else{
+		
+		float delta = b*b-4*a*c;
+		
+		if(delta<0){
+			printf("phuong trinh vo nghiem");
+		}else{
+			if(delta==0){
+				printf("phuong trinh co nghiem x = %f",-b/(2*a));
+			}else{
+				printf("phuong trinh co nghiem x1 = %f\n",(-b-sqrt(delta))/(2*a));
+				printf("phuong trinh co nghiem x2 = %f\n",(-b+sqrt(delta))/(2*a));
+			}
+		}
+	}
+
+}
