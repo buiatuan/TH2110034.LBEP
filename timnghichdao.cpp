@@ -8,7 +8,7 @@ int main(){
 	int snd = 0;
 	int du = 0;
 
-	if(a>0&&a<10000){
+	if(a>0 && a<10000){
 		du =a%10;
 		snd = snd*10 + du;
 		a = a/10;
@@ -27,7 +27,14 @@ int main(){
 								du =a%10;
 								snd = snd*10 + du;
 								a = a/10;
+									if(a>0){
+										du =a%10;
+										snd = snd*10 + du;
+										a = a/10;
 
+									}else{
+										printf("So nghich dao la: %d",snd);
+									}	
 							}else{
 								printf("So nghich dao la: %d",snd);
 							}
