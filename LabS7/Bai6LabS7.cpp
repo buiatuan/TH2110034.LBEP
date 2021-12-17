@@ -13,17 +13,21 @@ int main(){
 	for(i=0;i<n;i++){
 		if(arr[i]>0){
 			count++;
-		}else{
 			if(count>max){
 				max=count;
 			}
+		}else{
+//			if(count>max){
+//				max=count;
+//			}
 			count=0;
 		}
 	}
-	if(count>max){
-		printf("cac so duong lien tiep nhieu nhat la: %d",count);
-	}else{
-		printf("cac so duong lien tiep nhieu nhat la: %d",max);
-	}
+//	if(count>max){
+//		printf("cac so duong lien tiep nhieu nhat la: %d",count);
+//	}else{
+//		printf("cac so duong lien tiep nhieu nhat la: %d",max);
+//	}
+	printf("so luong so duong lien tiep nhieu nhat la: %d\n",max);
 	
 }

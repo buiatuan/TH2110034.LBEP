@@ -17,5 +17,10 @@ int main(){
 			s+=arr[i];
 		}
 	}
-	printf("trung binh cong cac so le trong mang la: %f",s/count);
+	if(count!=0){
+		printf("trung binh cong cac so le trong mang la: %f",s/count);
+	}else{
+		printf("Danh sach khong co so le nao ca");
+	}
+	
 }

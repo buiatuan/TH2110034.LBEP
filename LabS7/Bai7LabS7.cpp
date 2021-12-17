@@ -13,17 +13,20 @@ int main(){
 	for(i=0;i<n;i++){
 		if(arr[i]>0){
 			s+=arr[i];
-		}else{
 			if(s>max){
 				max=s;
 			}
+		}else{
+//			if(s>max){
+//				max=s;
+//			}
 			s=0;
 		}	
 	}
-	if(s>max){
-		printf("Tong chuoi so duong lon nhat la: %d",s);
-	}else{
-		printf("Tong chuoi so duong lon nhat la: %d",max);
-	}
-	
+//	if(s>max){
+//		printf("Tong chuoi so duong lon nhat la: %d",s);
+//	}else{
+//		printf("Tong chuoi so duong lon nhat la: %d",max);
+//	}
+	printf("tong cac phan tu trong chuoi duong lon nhat la: %d",max);
 }

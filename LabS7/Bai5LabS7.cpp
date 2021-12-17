@@ -17,7 +17,7 @@ int main(){
 			break;
 		}
 	}
-	if(min<0){
+	if(min<=0){
 		printf("mang toan so nguyen am");
 	}else{
 		for(i=0;i<n;i++){

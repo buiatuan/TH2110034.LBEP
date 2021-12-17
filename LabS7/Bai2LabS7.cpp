@@ -11,11 +11,16 @@ int main(){
 		scanf("%d",&arr[i]);
 	}
 	for(i=0;i<n;i++){
-		if(arr[i]%2!=0 && i%2!=0){
+		if(arr[i]%2!=0 && i%2==0){
 			count++;
 			s+=arr[i];
 		}
 	}
-	printf("trung binh cong cua cac so le o vi tri chan trong mang la: %f",s/count);
+	if(count==0){
+		printf("mang khong co so le");
+	}else{
+		printf("trung binh cong cua cac so le o vi tri chan trong mang la: %f",s/count);
+	}
+	
 	
 }

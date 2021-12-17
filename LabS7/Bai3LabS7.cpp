@@ -19,7 +19,7 @@ int main(){
 			break;
 		}
 	}
-	if(count>=1){
+	if(count=1){
 		printf("%d la gia tri trong mang",x);
 	}else{
 		printf("%d khong la gia tri trong mang");
